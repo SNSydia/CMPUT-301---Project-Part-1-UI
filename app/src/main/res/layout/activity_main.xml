@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -11,7 +12,72 @@
     tools:context="com.momo.momouiprototype.MainActivity">
 
     <TextView
+        android:text="Password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="36dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_above="@+id/textView2"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginBottom="34dp" />
+
+    <TextView
+        android:text="Username: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_above="@+id/editText2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginBottom="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageView"
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+        tools:layout_above="@id/activity_main"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/editText"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        style="@android:style/Widget.Holo.Light.Button"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <Button
+        android:text="*Create an account*"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_above="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignEnd="@+id/button"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:textStyle="normal|italic" />
 </RelativeLayout>
