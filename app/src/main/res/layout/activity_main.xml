@@ -11,15 +11,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.momo.momouiprototype.MainActivity">
 
-    <TextView
-        android:text="Password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:layout_alignBottom="@+id/editText"
-        android:layout_alignStart="@+id/textView"
-        android:layout_marginBottom="36dp" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,16 +27,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView"
         android:layout_above="@+id/editText2"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_marginBottom="130dp"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
     <ImageView
@@ -80,4 +61,22 @@
         android:layout_alignEnd="@+id/button"
         style="@android:style/Widget.DeviceDefault.Button.Borderless"
         android:textStyle="normal|italic" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/editText"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
