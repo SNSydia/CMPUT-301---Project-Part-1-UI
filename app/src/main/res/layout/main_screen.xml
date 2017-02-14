@@ -5,13 +5,36 @@
     android:layout_height="match_parent"
     android:layout_above="@id/button3">
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:text="Profile Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textSize="24sp"
+            android:textStyle="normal|italic"
+            android:paddingLeft="10dp"
+            android:layout_weight="1.00" />
+
+        <Button
+            android:text="Edit Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button7" />
+    </LinearLayout>
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/button3"
-        android:listSelector="@android:drawable/list_selector_background" />
+        android:listSelector="@android:drawable/list_selector_background"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_above="@+id/button8" />
 
     <Button
         android:text="Filter My Mood "
