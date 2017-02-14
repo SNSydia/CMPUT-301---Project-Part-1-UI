@@ -67,7 +67,8 @@
         style="@android:style/Widget.DeviceDefault.Button.Borderless"
         android:textStyle="normal|italic"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
 
     <TextView
         android:text="Create an account"

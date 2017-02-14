@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Momo UIprototype</string>
+    <string-array name="moods_array">
+        <item>Happy</item>
+        <item>Sad</item>
+        <item>Salty</item>
+    </string-array>
+
 </resources>
