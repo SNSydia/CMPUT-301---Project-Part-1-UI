@@ -11,40 +11,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.momo.momouiprototype.MainActivity">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_above="@+id/textView2"
-        android:layout_alignStart="@+id/editText"
-        android:layout_marginBottom="34dp" />
-
     <TextView
         android:text="Choose Username: "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
         android:layout_above="@+id/editText2"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_marginBottom="24dp"
-        android:layout_above="@+id/button2"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:text="Choose Password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:layout_above="@+id/editText"
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -55,8 +27,25 @@
         style="@android:style/Widget.DeviceDefault.Button.Borderless"
         android:textStyle="normal|italic"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/editText"
-        android:layout_alignEnd="@+id/editText" />
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_alignStart="@+id/editText2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_above="@+id/button2"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/MomoLogo"
+        android:id="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/textView3" />
 
     <TextView
         android:text="Create an account"
@@ -64,16 +53,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView3"
         tools:textSize="24sp"
-        android:layout_marginBottom="64dp"
+        android:textStyle="normal|italic"
         android:layout_above="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:textStyle="normal|italic" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/MomoLogo"
-        android:id="@+id/imageView"
-        android:layout_alignBottom="@+id/textView3"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginBottom="140dp" />
 </RelativeLayout>
